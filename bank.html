@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to your profile</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <h1 class="font-bold text-5xl w-4/5 mx-auto text-center">Welcome to <span class="text-yellow-500">  Mibland Bank LTD</span></h1>
+    
+    <section class=" w-4/5 mx-auto mt-11">
+        <div class="grid grid-cols-3 gap-4">
+            <div class="inline bg-blue-500 text-center text-2xl text-gray-100 h-48" >
+                <h1 class="mt-10" >Deposit</h1>
+                <h1 >$ <span  id="depositShow" >00</span> </h1>
+            </div>
+            <div class="inline  bg-yellow-500 text-center text-2xl text-gray-100 h-48 ">
+                <h1 class="mt-10">Withdraw</h1>
+                <h1>$ <span id="withdrawId">00</span> </h1>
+            </div>
+            <div  class=" inline bg-black text-center text-2xl text-gray-100 h-48">
+                <h1 class="mt-10">Total Balance</h1>
+                <h1>$ <span id="totalBalanceId">1000</span> </h1>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- deposit and withdraw button -->
+     <section  class=" w-4/5 mx-auto mt-11">
+         <div class="grid grid-cols-2 gap-x-10">
+            <div class="inline bg-blue-500 text-center text-2xl text-gray-100 h-48">
+                <h1 class="mt-10" >Please deposit</h1>
+                <input type="" id="depositInput" class="border-2 border-gray-700 mb-3 text-black" placeholder="$enter your money">
+                 <br>
+                <button id="depositButId" class="text-gray-100 bg-black p-2">Deposit</button>
+            </div>
+
+            <div class="   bg-yellow-500 text-center text-2xl text-gray-100 h-48">
+                <h1 class="mt-10" >Withdraw your money</h1>
+                <input type="" id="wihdrawInput" class="border-2 border-gray-700 mb-3 text-black" placeholder="withdraw your money$">
+                 <br>
+                <button id="withdrawButId" class="text-gray-100 bg-black p-2">Withdraw</button>
+            </div>
+         </div>
+
+     </section>
+
+
+
+
+
+
+
+    <script src="bankProfile.js"></script>
+</body>
+</html>
